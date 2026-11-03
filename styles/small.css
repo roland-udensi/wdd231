@@ -12,12 +12,20 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     color: var(--text-color);
     line-height: 1.5;
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    flex-wrap: wrap;
     background-color: var(--primary-color);
     color: var(--white);
     padding: 1rem;
@@ -157,17 +165,6 @@ section p {
 .course-card.completed {
     background-color: #d8ecdf;
     border: 2px solid #427553;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: 1rem;
-    flex-wrap: wrap;
 }
 
 footer {
