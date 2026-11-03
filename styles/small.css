@@ -1,0 +1,182 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #283e36;
+    --secondary-color: #e8eee9;
+    --text-color: #222;
+    --white: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+}
+
+header span {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#menu-button {
+    float: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-left: auto;
+    align-self: center;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    flex-basis: 100%;
+    width: 100%;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.8rem;
+}
+
+nav a[aria-current="page"] {
+    background-color: #426657;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #527967;
+}
+
+main {
+    padding: 1rem;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+section {
+    margin-bottom: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 0.6rem;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+section p {
+    padding: 1rem;
+}
+
+.intro {
+    display: grid;
+    gap: 1rem;
+}
+
+.intro img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.brand img {
+    display: block;
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+}
+
+.brand span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.filters button {
+    padding: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filters button.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+#course-list {
+    display: grid;
+    gap: 0.7rem;
+}
+
+.course-card {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.course-card.completed {
+    background-color: #d8ecdf;
+    border: 2px solid #427553;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+

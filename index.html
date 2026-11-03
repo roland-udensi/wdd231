@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Roland Udensi's WDD231 course home page.">
+    <meta name="author" content="Roland Udensi">
+    <title>Home | Roland Udensi</title>
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">
+            <img src="images/logo.svg" alt="The site Logo" width="45" height="45">
+            <span>Roland Udensi</span>
+        </div>
+        <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+
+        <nav id="navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="chamber/">Chamber</a>
+            <a href="project/">Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="intro">
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm Roland Udensi, a student learning software
+                    development. I enjoy programming and learning how
+                    technology can solve problems.
+                </p>
+            </section>
+
+            <section>
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="Portrait of Roland Udensi" width="300" height="300" loading="lazy">
+
+            </section>
+        </div>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="filters">
+                <button type="button" data-filter="ALL">All</button>
+                <button type="button" data-filter="CSE">CSE</button>
+                <button type="button" data-filter="WDD">WDD</button>
+            </div>
+
+            <div id="course-list"></div>
+
+            <p id="credit-total"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <!-- Add your social media links here -->
+        </div>
+
+        <p>© <span id="currentyear"></span> Roland Udensi | Nigeria</p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
