@@ -7,10 +7,16 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
 }
+
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif;
+} 
+
+where will i add this
 
 /* Header */
 header {
@@ -47,6 +53,16 @@ header {
     color: white;
     font-size: 1.8rem;
     cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#menu-button:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+#menu-button:active {
+    transform: scale(0.95);
 }
 
 nav {
@@ -64,6 +80,8 @@ nav a {
     color: white;
     padding: 0.8rem;
     text-align: center;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
 nav a.active {
@@ -119,6 +137,7 @@ h1 {
     padding: 1rem;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
 }
 
 .member-card img {
@@ -179,7 +198,7 @@ footer {
     gap: 2rem;
 }
 
-footer h3 {
+footer h2 {
     color: var(--secondary-color);
     margin-bottom: 0.8rem;
 }
@@ -207,10 +226,6 @@ footer a:focus-visible {
     outline-offset: 3px;
 }
 
-nav a {
-    position: relative;
-    transition: color 0.3s ease;
-}
 
 nav a::after {
     content: "";
@@ -240,11 +255,6 @@ nav a:focus-visible::after {
     color: var(--primary-color);
 }
 
-
-.member-card {
-    transition: box-shadow 0.3s ease;
-}
-
 .member-card:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
 }
@@ -256,15 +266,3 @@ button:focus-visible {
     outline-offset: 3px;
 }
 
-#menu-button {
-    transition: color 0.3s ease, transform 0.2s ease;
-}
-
-#menu-button:hover {
-    color: var(--secondary-color);
-    transform: scale(1.1);
-}
-
-#menu-button:active {
-    transform: scale(0.95);
-}
