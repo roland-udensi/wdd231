@@ -1,0 +1,270 @@
+/* General styles */
+:root {
+    --primary-color: #142d4e;
+    --secondary-color: #d4a63b;
+    --background-color: #f4f6f9;
+    --text-color: #222222;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.logo-subtitle {
+    font-size: 0.85rem;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+nav a.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Main content */
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 1.5rem 0;
+    color: var(--primary-color);
+}
+
+.view-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.view-buttons button {
+    padding: 0.6rem 1.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.view-buttons button.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Member cards */
+.members-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.member-card {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.member-card img {
+    width: 120px;
+    height: 90px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+}
+
+.member-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.member-card p {
+    margin: 0.3rem 0;
+}
+
+.member-card a {
+    color: var(--primary-color);
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+/* List view */
+.members-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.members-list .member-card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0.8rem;
+}
+
+.members-list .member-card img {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2.5rem 1.5rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+footer h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.8rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+footer a {
+    color: white;
+    display: block;
+    width: fit-content;
+    margin: 0.5rem 0;
+    overflow-wrap: anywhere;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+footer a:focus-visible {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 3px;
+}
+
+nav a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    color: var(--secondary-color);
+}
+
+nav a:hover::after,
+nav a:focus-visible::after {
+    width: 70%;
+    left: 15%;
+}
+
+
+.view-buttons button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+.member-card {
+    transition: box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 3px;
+}
+
+#menu-button {
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#menu-button:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+#menu-button:active {
+    transform: scale(0.95);
+}

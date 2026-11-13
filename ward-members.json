@@ -1,0 +1,28 @@
+{
+    "familyName": "Udensi",
+    "moveInDate": "2026-10-15",
+    "numberOfPeople": 4,
+    "visitedByBishopric": false,
+    "familyMembers": [
+        {
+            "name": "John Udensi",
+            "gender": "Male",
+            "birthdate": "1980-05-12"
+        },
+        {
+            "name": "Mary Udensi",
+            "gender": "Female",
+            "birthdate": "1985-08-20"
+        },
+        {
+            "name": "Peter Udensi",
+            "gender": "Male",
+            "birthdate": "2010-03-14"
+        },
+        {
+            "name": "Sarah Udensi",
+            "gender": "Female",
+            "birthdate": "2014-11-09"
+        }
+    ]
+}

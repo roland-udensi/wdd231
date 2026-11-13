@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Riverside Technologies",
+        "address": "12 Aba Road, Port Harcourt, Rivers State",
+        "phone": "+234 803 456 7890",
+        "website": "https://example.com",
+        "image": "riverside.svg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Garden City Supermarket",
+        "address": "45 Stadium Road, Port Harcourt, Rivers State",
+        "phone": "+234 806 234 5678",
+        "website": "https://example.com",
+        "image": "garden-city.svg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Niger Delta Logistics",
+        "address": "8 Trans-Amadi Road, Port Harcourt, Rivers State",
+        "phone": "+234 809 123 4567",
+        "website": "https://example.com",
+        "image": "niger-delta.svg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Bright Future Academy",
+        "address": "21 Peter Odili Road, Port Harcourt, Rivers State",
+        "phone": "+234 802 345 6789",
+        "website": "https://example.com",
+        "image": "bright-future.svg",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Atlantic View Hotels",
+        "address": "6 Woji Road, Port Harcourt, Rivers State",
+        "phone": "+234 807 456 1234",
+        "website": "https://example.com",
+        "image": "atlantic-view.svg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Prime Health Pharmacy",
+        "address": "17 Olu Obasanjo Road, Port Harcourt, Rivers State",
+        "phone": "+234 805 678 9012",
+        "website": "https://example.com",
+        "image": "prime-health.svg",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Royal Crest Furniture",
+        "address": "32 Ikwerre Road, Port Harcourt, Rivers State",
+        "phone": "+234 804 567 8901",
+        "website": "https://example.com",
+        "image": "royal-crest.svg",
+        "membershipLevel": 2
+    }
+]

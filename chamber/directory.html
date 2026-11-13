@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore businesses, services, and organizations in Port Harcourt, Rivers State. Discover local businesses through the Port Harcourt Chamber of Commerce directory.">
+    <meta name="author" content="Roland Udensi">
+
+    <title>Business Directory | Port Harcourt Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:title" content="Port Harcourt Chamber of Commerce">
+    <meta property="og:description"
+        content="Discover and connect with businesses in Port Harcourt, Rivers State, Nigeria.">
+    <meta property="og:image" content="https://roland-udensi.github.io/wdd231/chamber/images/social-preview.jpg">
+    <meta property="og:url" content="https://roland-udensi.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-name">Port Harcourt</span>
+                <span class="logo-subtitle">Chamber of Commerce</span>
+            </a>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html" class="active" aria-current="page">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Business Directory</h1>
+
+        <div class="view-buttons">
+            <button id="grid-button" class="active" aria-pressed="true">Grid</button>
+            <button id="list-button" aria-pressed="false">List</button>
+        </div>
+
+        <section id="members" class="members-grid">
+            <!-- Business members will be displayed here using JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Port Harcourt Chamber of Commerce</h3>
+                <p>Port Harcourt, Rivers State, Nigeria</p>
+                <p><a href="mailto:info@portharcourtchamber.org">info@portharcourtchamber.org</a></p>
+                <p><a href="tel:+2348000000000">+234 800 000 0000</a></p>
+            </div>
+    
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </div>
+    
+            <div class="development-info">
+                <h3>Project Information</h3>
+                <p>WDD231 Class Project</p>
+                <p>Developed by Roland Udensi</p>
+                <p>&copy; <span id="current-year"></span> Port Harcourt Chamber of Commerce</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
